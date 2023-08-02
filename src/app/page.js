@@ -1,8 +1,11 @@
 "use client";
 import { useState } from "react";
 import styles from "./page.module.css";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+	const router = useRouter();
 	const [name, setName] = useState("");
 	function Greeting() {
 		alert("Welcome to Next");
@@ -48,6 +51,23 @@ export default function Home() {
 			<InnerComponent />
 			{/** Inner Componet calling as a function*/}
 			{InnerComponent()}
+			{/** routing using  Link */}
+			<Link href="/login">Login</Link>
+			<Link href="/about">About</Link>
+
+			{/** routing using useRouter hook */}
+			<button
+				className="bg-blue-700 text-white rounded-md p-2 m-2"
+				onClick={() => router.push("/login")}
+			>
+				Go to login page
+			</button>
+			<button
+				className="bg-blue-700 text-white rounded-md p-2 m-2"
+				onClick={() => router.push("/about")}
+			>
+				Go to about page
+			</button>
 		</main>
 	);
 }
