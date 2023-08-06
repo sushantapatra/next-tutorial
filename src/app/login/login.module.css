@@ -1,0 +1,8 @@
+.login_menu {
+	display: flex;
+}
+
+.login_menu li {
+	margin-left: 25px;
+	list-style-type: none;
+}
