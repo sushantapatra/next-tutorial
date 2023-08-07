@@ -23,6 +23,9 @@ const LoginLayout = ({ children }) => {
 					<li className="hover:text-sky-700">
 						<Link href="/login/teacherlogin">Teacher Login</Link>
 					</li>
+					<li className="hover:text-sky-700">
+						<Link href="/productlist">Product List</Link>
+					</li>
 				</ul>
 			) : (
 				<ul className="flex space-x-4 p-4 bg-slate-200 shadow items-center">
