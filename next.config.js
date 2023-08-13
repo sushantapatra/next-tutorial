@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+	images: {
+		domains: ["svs.gsfc.nasa.gov"],
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

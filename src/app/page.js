@@ -22,6 +22,9 @@ export default function Home() {
 		return (
 			<div>
 				<h1>Hi I am Inner Component</h1>
+				<p style={{ backgroundColor: "blue", color: "white" }}>
+					Inline Css Applyed
+				</p>
 			</div>
 		);
 	};
