@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+import connectDB from "@/utils/dnconnection";
 
 export const metadata = {
 	title: "Create Next App",
@@ -9,6 +10,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+	connectDB();
 	return (
 		<html lang="en">
 			<head>
